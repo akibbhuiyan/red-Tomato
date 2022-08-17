@@ -5,6 +5,7 @@ import SignUp from './component/Login/SignUp';
 import FoodDetails from './component/FoodDetails/FoodDetails';
 import Header from './component/Header/Header'
 import { createContext, useState } from 'react';
+import PlaceOrder from './component/PlaceOrder/PlaceOrder';
 
 export const userContext = createContext()
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='/' element={<Home />} exact />
         <Route path='/signin' element={<SignUp />} />
         <Route path='/login' element={<SignUp />} />
+        <Route path='/placeorder' element={<PlaceOrder />} />
         <Route path='/food/:foodId' element={<FoodDetails />} />
       </Routes>
     </userContext.Provider>

@@ -1,0 +1,73 @@
+.placeOrder {
+	margin-top: 50px;
+}
+.shiping input {
+	padding: 10px 16px;
+}.foodimg,.squantity {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.foodimg img {
+	width: 100%;
+}.cart {
+	margin-left: 5px;
+    text-align: center;
+}.cart table {
+	font-size: 12px;
+	text-align: left;
+	width: 100%;
+	margin-top: 35px;
+}.total-row {
+	color: #b12704;
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 22px;
+	border: 1px solid gray;
+	margin-bottom: 10px;
+}.shiping-quantity button ,.shiping-quantity h3{
+	border: none;
+	padding: 4px 10px;
+	background-color: transparent;
+	text-align: center;
+
+}
+.shiping-quantity h3 {
+	display: inline-block;
+	font-size: 15px !important;
+	padding-top: 10px;
+}.shiping-quantity {
+	border: 1px solid #d5cbcb;
+	border-radius: 21px;
+	margin-left: 46px;
+	margin-top: 9px;
+}.shiping-quantity button {
+	width: 34px;
+	color: #f91944;
+}.placeOrder p {
+	color: #4d4a4a;
+	margin-bottom: 6px;
+}.placeOrder p span {
+	color: #2b2626;
+	font-size: 18px;
+	font-weight: 600;
+}.product {
+	background-color: #F5F5F5;
+	border-radius: 10px;
+	padding: 8px 10px;
+	margin-top: 10px;
+}.product h4 {
+	font-size: 16px;
+	font-weight: 600;
+}.product h3 {
+	font-size: 24px;
+	font-weight: 600;
+	color: #f91944;
+}.product span {
+	color: #f91944;
+	font-size: 11px;
+	color: #6f6a6a;
+}.cart td {
+	font-size: 17px;
+	font-weight: 500;
+}

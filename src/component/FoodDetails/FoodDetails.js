@@ -39,7 +39,7 @@ const FoodDetails = () => {
                     </div>
                 </div>
 
-                <Link to='/shipment'> <button className='main-btn'><FiShoppingCart /> Add</button></Link>
+                <Link to='/placeorder'> <button className='main-btn'><FiShoppingCart /> Add</button></Link>
             </div>
             <div className="mealimg col-12 col-md-12 col-lg-5 col-xl-5">
                 <img src={img} alt={name} />

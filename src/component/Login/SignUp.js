@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import logo from '../../images/logo2.png'
-import './Login.css'
+import './SignUp.css'
 import { Link } from 'react-router-dom';
 import { initializeApp } from 'firebase/app';
 import firebaseConfig from './firebase.config';
@@ -50,7 +50,7 @@ const SignUp = () => {
                     setUser(newUserInfo)
                     upadateUserName(newUserInfo);
                     setLoggedInUser(newUserInfo);
-                    navigate("../home", { replace: true });
+                    navigate("../placeorder", { replace: true });
                 })
                 .catch((error) => {
                     const newUserInfo = { ...user }
@@ -68,7 +68,7 @@ const SignUp = () => {
                     newUserInfo.success = true
                     setUser(newUserInfo);
                     setLoggedInUser(newUserInfo);
-                    navigate("../home", { replace: true });
+                    navigate("../placeorder", { replace: true });
                 })
                 .catch((error) => {
                     const newUserInfo = { ...user }

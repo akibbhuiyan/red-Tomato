@@ -10,20 +10,20 @@
 }
 .login-container img {
 	width: 300px;
-}.login_form {
+}.login_form ,.shiping{
 	display: flex;
 	flex-direction: column;
 	width: 350px;
 	justify-content: center;
     margin-top: 60px;
-}.login_form input {
+}.login_form input,.shiping input {
 	padding: 17px 10px;
 	border: none;
 	background-color: #F5F5F5;
 	margin-bottom: 20px;
 	outline: none;
     border-radius: 5px;
-}.login_form .main-btn {
+}.login_form .main-btn, .shiping .main-btn {
 	background-color: #F91944;
     border-radius: 30px;
     margin-top: 14px;
