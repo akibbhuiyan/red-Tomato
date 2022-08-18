@@ -1,6 +1,4 @@
-.placeOrder {
-	margin-top: 50px;
-}
+
 .shiping input {
 	padding: 10px 16px;
 }.foodimg,.squantity {
@@ -9,7 +7,7 @@
 	align-items: center;
 }
 .foodimg img {
-	width: 100%;
+	width: 70%;
 }.cart {
 	margin-left: 5px;
     text-align: center;
@@ -44,7 +42,8 @@
 }.shiping-quantity button {
 	width: 34px;
 	color: #f91944;
-}.placeOrder p {
+}
+.placeOrder p {
 	color: #4d4a4a;
 	margin-bottom: 6px;
 }.placeOrder p span {
@@ -70,4 +69,39 @@
 }.cart td {
 	font-size: 17px;
 	font-weight: 500;
+}.squantity {
+	position: relative;
+}
+.squantity h3 {
+	font-size: 15px;
+	font-weight: 500;
+}.crossIcon {
+	position: absolute;
+	top: 0px;
+	right: 15px;
+	background-color: transparent;
+	border: none;
+}.crossIcon svg {
+	font-size: 18px;
+}
+.crossIcon svg:hover {
+	color:#f91944;
+}
+
+.cart button:disabled{
+	border-radius: 30px;
+	margin-top: 14px;
+	width: 100%;
+	color: #fff;
+	border: none;
+	padding: 8px 0;
+}
+.cart button:enabled {
+	background-color: #F91944;
+	border-radius: 30px;
+	margin-top: 14px;
+	width: 100%;
+	color: #fff;
+	border: none;
+	padding: 8px 0;
 }

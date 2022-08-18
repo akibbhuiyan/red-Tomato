@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import Menu from '../MenuItem/ManeuItem';
 import { FiShoppingCart } from 'react-icons/fi'
 import './FoodDetails.css'
+import { addToDatabaseCart } from '../LocalStorage/fakeDb';
 const FoodDetails = () => {
     const { foodId } = useParams()
     const [FoodDetails, setFoodDetails] = useState({})
@@ -24,7 +25,9 @@ const FoodDetails = () => {
             setInput(input)
         }
     }
-
+    const addFoodToCart = () => {
+        addToDatabaseCart(foodId, input)
+    }
     return (
         <div className='meal-container row'>
             <div className="meal_info col-12 col-md-12 col-lg-5 col-xl-5">
@@ -39,7 +42,7 @@ const FoodDetails = () => {
                     </div>
                 </div>
 
-                <Link to='/placeorder'> <button className='main-btn'><FiShoppingCart /> Add</button></Link>
+                <Link to='/placeorder'> <button className='main-btn' onClick={addFoodToCart}><FiShoppingCart /> Add</button></Link>
             </div>
             <div className="mealimg col-12 col-md-12 col-lg-5 col-xl-5">
                 <img src={img} alt={name} />
