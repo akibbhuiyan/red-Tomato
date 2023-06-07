@@ -56,6 +56,7 @@ const SignUp = () => {
           setUser(newUserInfo);
           upadateUserName(newUserInfo.name);
           setLoggedInUser(newUserInfo);
+          console.log("Success");
 
           navigate("../placeorder", { replace: true });
         })
@@ -65,6 +66,7 @@ const SignUp = () => {
             "This Email Address is already used in another Account";
           newUserInfo.success = false;
           setUser(newUserInfo);
+          console.log(error);
         });
     }
     if (!newUser && user.email && user.password) {
